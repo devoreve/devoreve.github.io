@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les grandes villes de France</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <h1>Les grandes villes de France</h1>
+        
+        <section class="py-2 my-4 card">
+            <h2>Choix de la région et du département</h2>
+            
+            <aside id="error-text" class="alert alert-error" hidden></aside>
+            
+            <form id="department-form">
+                <fieldset class="mt-1">
+                    <label for="regions-list">Liste des régions</label>
+                    <select name="regions_list" id="regions-list"></select>
+                </fieldset>
+                <fieldset class="mt-1">
+                    <label for="departments-list">Liste des départements</label>
+                    <select name="departments_list" id="departments-list"></select>
+                </fieldset>
+                <fieldset class="text-center">
+                    <button class="mt-1 button">Afficher les communes</button>
+                </fieldset>
+            </form>
+        </section>
+    
+        <section class="py-2 my-4 card">
+            <h2>Liste des communes (de la plus peuplée à la moins peuplée)</h2>
+            <ol id="cities-list"></ol>
+        </section>
+    </main>
+</body>
+</html>

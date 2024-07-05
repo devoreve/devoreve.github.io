@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #f0f8ff, #ffffff);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #6e8efb;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+main {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 4rem;
+    background-color: #fff;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    font-size: 5rem;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 0.2rem solid #e0e0e0;
+    border-radius: 1rem;
+    box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+    font-size: 5rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #6e8efb;
+    box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2), 0 0 0.8rem rgba(110, 142, 251, 0.6);
+    outline: none;
+}
+
+ol {
+    margin-left: 7rem;
+}
+
+li {
+    margin: 1rem 0;
+}
+
+.card {
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+    padding: 3rem;
+}
+
+.alert-error {
+    background-color: firebrick;
+    color: white;
+}
+
+.button {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.2rem);
+}
+
+.button:active {
+    background: linear-gradient(135deg, #5d79e2, #946bd5);
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.my-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.my-4 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.border-top {
+    border-top: 0.1rem solid;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 5rem;
+    }
+
+    .button {
+        font-size: 5rem;
+        padding: 1.2rem 2.4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 2.6rem;
+    }
+
+    .button {
+        font-size: 2.8rem;
+        padding: 1.4rem 2.8rem;
+    }
+
+    main {
+        max-width: 90rem;
+        padding: 3rem;
+    }
+    
+    label {
+        font-size: 2.8rem;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        font-size: 2.8rem;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2.8rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+    
+    h4 {
+        font-size: 1.6rem;
+    }
+    
+    h5 {
+        font-size: 1.4rem;
+    }
+    
+    h6 {
+        font-size: 1.2rem;
+    }
+}
